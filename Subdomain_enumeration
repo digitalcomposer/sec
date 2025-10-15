@@ -1,0 +1,33 @@
+# sec
+cybersecurity
+
+Web-Links:
+
+https://github.com/danielmiessler/SecLists
+
+Commands:
+
+user@machine$ ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://MACHINE_IP/
+
+user@machine$ dirb http://MACHINE_IP/ /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+
+user@machine$ gobuster dir --url http://MACHINE_IP/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
+
+---------
+OSINT:
+SSL CERT SEARCH:
+https://crt.sh/
+Google Search:
+site:*.tryhackme.com -site:www.tryhackme.com
+
+DNS BRUTE FORCE:
+user@thm:~$ dnsrecon -t brt -d acmeitsupport.thm
+
+https://www.kali.org/tools/sublist3r/
+user@thm:~$ ./sublist3r.py -d acmeitsupport.thm
+
+Virtual Host
+
+user@machine$ ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.251.206
+
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.251.206 -fs {size}

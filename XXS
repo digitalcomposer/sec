@@ -1,3 +1,0 @@
-<script>alert('XSS');</script>
-
-https://github.com/mandatoryprogrammer/xsshunter-express

